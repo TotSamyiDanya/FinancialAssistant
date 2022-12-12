@@ -1,0 +1,17 @@
+{
+"boards": {
+	"metadata": {
+		"id": {"type": "int32"},
+		"board_group_id": {"type": "int32"},
+		"boardid": {"type": "string", "bytes": 12, "max_size": 0},
+		"title": {"type": "string", "bytes": 381, "max_size": 0},
+		"is_traded": {"type": "int32"}
+	},
+	"columns": ["id", "board_group_id", "boardid", "title", "is_traded"], 
+	"data": [
+		[495, 279, "CREE", "Кредиты EUR - адрес.", 1],
+		[491, 275, "CRER", "Кредиты RUB - адрес.", 1],
+		[493, 277, "CREU", "Кредиты USD - адрес.", 1],
+		[1147, 1146, "CREY", "Кредиты CNY - адрес.", 1]
+	]
+}}

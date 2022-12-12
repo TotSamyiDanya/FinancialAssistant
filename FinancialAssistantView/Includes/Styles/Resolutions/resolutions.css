@@ -1,0 +1,60 @@
+/* Здесь описаны настройки некоторых элементов в зависимости от разрешения экрана */
+
+@media only screen and (max-width: 1920px) {
+  .logo, .help { font-size: 40px;}
+  .search input { font-size: 25px; height: 35px;}
+  .moex {width: 800px; height: 800px;}
+  .searchimg { height: 40px; width: 40px; bottom: 1px; right: 10%;}
+  .search_params_div { height: 60px;}
+  .search_params_div select { margin-left: 10px; border: 3px solid #2d2b36;}
+  .search_params_div select, button { font-size: 25px;}
+  .search_params_div button { height: 42px;}
+  .tools li { height: 50px; font-size: 30px; line-height: 50px;}
+  .tools li span { font-size: 25px; height: 40px; line-height: 40px;}
+  .footer_content { width: 410px; font-size: 21px;}
+  hr { width: 346.5px;}
+  .advice { font-size: 20px;}
+}
+@media only screen and (max-width: 1680px) {
+  .logo, .help { font-size: 35px;}
+  .search input { font-size: 22px; height: 30px;}
+  .moex {width: 700px; height: 700px;}
+  .searchimg { height: 35px; width: 35px; bottom: 1px; right: 30%;}
+  .search_params_div { height: 50px;}
+  .search_params_div select { margin-left: 10px; border: 3px solid #2d2b36;}
+  .search_params_div select, button { font-size: 20px;}
+  .search_params_div button { height: 36px;}
+  .tools li { height: 40px; font-size: 25px; line-height: 40px;}
+  .tools li span { font-size: 20px; height: 30px; line-height: 30px;}
+  .footer_content { width: 310px; font-size: 17px;}
+  hr { width: 296.5px;}
+  .advice { font-size: 20px;}
+}
+@media only screen and (max-width: 1366px) {
+  .logo, .help { font-size: 25px;}
+  .search input { font-size: 17px; height: 25px;}
+  .moex {width: 600px; height: 600px;}
+  .searchimg { height: 30px; width: 30px; bottom: 1px; right: 70%;}
+  .search_params_div { height: 40px;}
+  .search_params_div select { margin-left: 10px; border: 3px solid #2d2b36;}
+  .search_params_div select, button { font-size: 15px; width: 27%;}
+  .search_params_div button { height: 30px;}
+  .tools li { height: 30px; font-size: 20px; line-height: 30px;}
+  .tools li span { font-size: 15px; height: 20px; line-height: 20px;}
+  .footer_content { width: 210px; font-size: 13px;}
+  hr { width: 236.5px;}
+  .advice { font-size: 15px;}
+}
+@media only screen and (max-height: 1080px) {
+  .tools { height: 540px;}
+  #trapezoid {border-bottom: 3075px solid #ffffff; border-left: 190px solid transparent; border-right: 290px solid transparent;
+  top: -890px;}
+}
+@media only screen and (max-height: 900px) {
+  .tools { height: 440px;}
+  #trapezoid {display: none;}
+}
+@media only screen and (max-height: 768px) {
+  .tools { height: 340px;}
+  #trapezoid {display: none;}
+}

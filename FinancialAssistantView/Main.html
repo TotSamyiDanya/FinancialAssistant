@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Финансовый помощник</title>
+  <link rel="stylesheet" type="text/css" href="Includes/Styles/Resolutions/elements.css">
+	<link rel="stylesheet" type="text/css" href="Includes/Styles/Resolutions/blocks.css">
+	<link rel="stylesheet" type="text/css" href="Includes/Styles/Resolutions/resolutions.css">
+	<link rel="stylesheet" type="text/css" href="Includes/Styles/Visuals/styles.css">
+	<link rel="stylesheet" type="text/css" href="Includes/Styles/Visuals/animations.css">
+	<link rel="stylesheet" type="text/css" href="Includes/Styles/Visuals/webtools.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<div class="nav">
+			<div class="logo"><a href="#">ФП</a></div>
+			<div class="search">
+				<input type="text" name="find" placeholder="Поиск">
+				<div class="searchimgdiv"><img class="searchimg" src="Includes/Images/search.png"></div>
+			</div>
+			<div class="help"><a href="Help.html">?</a></div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="search_params_div">
+			<!--
+          <img class="selectImg" src="Includes/Images/select.JPG">
+          <img class="selectImg2" src="Includes/Images/select.JPG">
+      -->
+          <form class="search_params" action="" method="get">
+            <select id="markets" class="markets" name="" placeholder="Режим">
+              <option id="start" class="market">Рынок</option>
+            </select>
+            <select id="boards" class="boards" name="">
+              <option class="board" id="start">Режим</option>
+            </select>
+            <button id="find" type="button" name="button">Найти</button>
+          </form>
+        </div>
+        <div class="tools" id="tools">
+          <span class="advice">Выберите интерисующие вас рынок и режим инструмента</span>
+          <ul class="toolsul">
+          </ul>
+        </div>
+        <img class="moex" src="Includes/Images/moex.png" alt="moex">
+        <div id="trapezoid"></div>
+        <div class="chart">
+      		<div class="myChartdiv">
+            <canvas id="MyChart"></canvas>
+          </div>
+      	</div>
+	</div>
+	<div class="footer">
+		<div class="footer_content">
+        <table class="footer_table">
+          <tr>
+            <th>О нас</th>
+            <th>Инструменты</th>
+          </tr>
+          <tr>
+            <td>Контакты</td>
+            <td>Акции</td>
+          </tr>
+          <tr>
+            <td>Техподдержка</td>
+            <td>Валюта</td>
+          </tr>
+          <tr>
+            <td>Инструкция</td>
+            <td>Облигации</td>
+          </tr>
+        </table>
+        <hr>
+        <p class="footer_sheet">Sheet Software</p>
+      </div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="Includes/Scripts/script.js"></script>
+    <script type="text/javascript" src="Includes/Scripts/load.js"></script>
+</body>
+</html>

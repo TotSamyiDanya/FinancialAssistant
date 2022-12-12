@@ -1,0 +1,19 @@
+{
+"boards": {
+	"metadata": {
+		"id": {"type": "int32"},
+		"board_group_id": {"type": "int32"},
+		"boardid": {"type": "string", "bytes": 12, "max_size": 0},
+		"title": {"type": "string", "bytes": 381, "max_size": 0},
+		"is_traded": {"type": "int32"}
+	},
+	"columns": ["id", "board_group_id", "boardid", "title", "is_traded"], 
+	"data": [
+		[109, 41, "SDAD", "Standard: вечерняя сессия - адрес.", 0],
+		[105, 36, "SDMR", "Standard: вечерняя сессия - безадрес.", 0],
+		[107, 40, "SDRP", "Standard: сделки репо, вечерняя сессия - адрес.", 0],
+		[108, 41, "STAD", "Standard: дневная сессия - адрес.", 0],
+		[104, 36, "STMR", "Standard: дневная сессия - безадрес.", 0],
+		[106, 40, "STRP", "Standard: сделки репо, дневная сессия - адрес.", 0]
+	]
+}}

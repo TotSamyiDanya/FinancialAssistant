@@ -1,0 +1,32 @@
+{
+"history": {
+	"metadata": {
+		"BOARDID": {"type": "string", "bytes": 12, "max_size": 0},
+		"TRADEDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"SHORTNAME": {"type": "string", "bytes": 189, "max_size": 0},
+		"SECID": {"type": "string", "bytes": 36, "max_size": 0},
+		"NUMTRADES": {"type": "double"},
+		"VALUE": {"type": "double"},
+		"OPEN": {"type": "double"},
+		"LOW": {"type": "double"},
+		"HIGH": {"type": "double"},
+		"CLOSE": {"type": "double"},
+		"WAPRICE": {"type": "double"},
+		"TRADINGSESSION": {"type": "int32"}
+	},
+	"columns": ["BOARDID", "TRADEDATE", "SHORTNAME", "SECID", "NUMTRADES", "VALUE", "OPEN", "LOW", "HIGH", "CLOSE", "WAPRICE", "TRADINGSESSION"], 
+	"data": [
+
+	]
+},
+"history.cursor": {
+	"metadata": {
+		"INDEX": {"type": "int64"},
+		"TOTAL": {"type": "int64"},
+		"PAGESIZE": {"type": "int64"}
+	},
+	"columns": ["INDEX", "TOTAL", "PAGESIZE"], 
+	"data": [
+		[0, 0, 100]
+	]
+}}

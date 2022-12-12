@@ -1,0 +1,60 @@
+/* Здесь описаны визуальные свойства объектов */
+
+body {
+	font-family: 'Montserrat', sans-serif;
+  background-image: url("../../Images/background.jpg");
+}
+a { text-decoration: none; color: #eff4f7;}
+.nav { border-radius: 10px; background-color: #2d2b36; color: #eff4f7;}
+.logo, .help { font-weight: 600;}
+.search { border-radius: 7px;}
+.search, .search input { background-color: #eff4f7;}
+.search input {
+	outline: none;
+	border-radius: 7px;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	padding-left: 15px;
+	padding-right: 30px;
+}
+.search_params_div { background-color: #eff4f7; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5);}
+.search_params_div select, button { font-family: 'Montserrat', sans-serif; font-weight: 600; border-radius: 7px;}
+.search_params_div select { background-color: #eff4f7;}
+.search_params_div select option { color: black;}
+.search_params_div button { background-color: #2b5de0; color: #eff4f7; border: none;}
+.tools {
+  background-color: #eff4f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.tools li {
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: 7px;
+  font-weight: 400;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.tools li span {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #2d2b36;
+  color: #eff4f7;
+  font-weight: 600;
+  border-radius: 7px;
+  text-align: center;
+}
+.footer_content { color: #f5f5f5;}
+hr { border: none; color: #ffffff; background-color: #ffffff;}
+#MyChart { font-family: 'Montserrat', sans-serif;}
+.chart {
+  display: none;
+  padding: 20px;
+  background-color: #eff4f7;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 7px;
+}
+.myChartdiv { background-color: #ffffff; border-radius: 7px; box-shadow: 0 0 10px rgba(0,0,0,0.2);}
+.advice { font-weight: 600; text-align: center;}
+.moex { position: absolute; left: 75%; top: 40%; transform: translate(-50%,-50%);}

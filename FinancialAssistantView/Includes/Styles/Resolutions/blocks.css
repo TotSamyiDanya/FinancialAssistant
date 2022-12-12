@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+  	flex-direction: column;
+}
+
+.header, .main, .footer {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+@media only screen and (max-width: 1920px) {
+
+	body {
+		background-size: 1920px auto;
+	}
+
+	.header {
+		height: 150px;
+	}
+
+	.footer {
+		height: 250px;
+	}
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+	body {
+		background-size: 1366px auto;
+	}
+
+	.header {
+		height: 120px;
+	}
+
+	.footer {
+		height: 220px;
+	}
+
+}

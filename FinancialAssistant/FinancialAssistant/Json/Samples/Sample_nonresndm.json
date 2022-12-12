@@ -1,0 +1,64 @@
+{
+"history": {
+	"metadata": {
+		"SHORTNAME": {"type": "string", "bytes": 189, "max_size": 0},
+		"REGNUMBER": {"type": "string", "bytes": 189, "max_size": 0},
+		"BOARDNAME": {"type": "string", "bytes": 381, "max_size": 0},
+		"ISSUESIZE": {"type": "double"},
+		"CURRENCYID": {"type": "string", "bytes": 9, "max_size": 0},
+		"ACCINT": {"type": "double"},
+		"YIELDCLOSE": {"type": "double"},
+		"CLOSEVAL": {"type": "double"},
+		"YIELDATWAP": {"type": "double"},
+		"OPENVAL": {"type": "double"},
+		"TRENDWAPPR": {"type": "double"},
+		"TRENDWAP": {"type": "double"},
+		"TRENDCLSPR": {"type": "double"},
+		"TRENDCLOSE": {"type": "double"},
+		"WAPRICE": {"type": "double"},
+		"HIGH": {"type": "double"},
+		"CLOSE": {"type": "double"},
+		"OPEN": {"type": "double"},
+		"LOW": {"type": "double"},
+		"NUMTRADES": {"type": "double"},
+		"PREV": {"type": "double"},
+		"VALUE": {"type": "double"},
+		"VOLUME": {"type": "double"},
+		"FACEVALUE": {"type": "double"},
+		"BOARDID": {"type": "string", "bytes": 12, "max_size": 0},
+		"SECID": {"type": "string", "bytes": 36, "max_size": 0},
+		"TRADEDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"DECIMALS": {"type": "int32"},
+		"LISTNAME": {"type": "string", "bytes": 6, "max_size": 0},
+		"ISIN": {"type": "string", "bytes": 765, "max_size": 0},
+		"MATDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"TYPE": {"type": "string", "bytes": 93, "max_size": 0},
+		"IRICPICLOSE": {"type": "double"},
+		"BEICLOSE": {"type": "double"},
+		"COUPONPERCENT": {"type": "double"},
+		"COUPONVALUE": {"type": "double"},
+		"BUYBACKDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"LASTTRADEDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"CBRCLOSE": {"type": "double"},
+		"YIELDTOOFFER": {"type": "double"},
+		"YIELDLASTCOUPON": {"type": "double"},
+		"OFFERDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"FACEUNIT": {"type": "string", "bytes": 9, "max_size": 0},
+		"TRADINGSESSION": {"type": "int32"}
+	},
+	"columns": ["SHORTNAME", "REGNUMBER", "BOARDNAME", "ISSUESIZE", "CURRENCYID", "ACCINT", "YIELDCLOSE", "CLOSEVAL", "YIELDATWAP", "OPENVAL", "TRENDWAPPR", "TRENDWAP", "TRENDCLSPR", "TRENDCLOSE", "WAPRICE", "HIGH", "CLOSE", "OPEN", "LOW", "NUMTRADES", "PREV", "VALUE", "VOLUME", "FACEVALUE", "BOARDID", "SECID", "TRADEDATE", "DECIMALS", "LISTNAME", "ISIN", "MATDATE", "TYPE", "IRICPICLOSE", "BEICLOSE", "COUPONPERCENT", "COUPONVALUE", "BUYBACKDATE", "LASTTRADEDATE", "CBRCLOSE", "YIELDTOOFFER", "YIELDLASTCOUPON", "OFFERDATE", "FACEUNIT", "TRADINGSESSION"], 
+	"data": [
+
+	]
+},
+"history.cursor": {
+	"metadata": {
+		"INDEX": {"type": "int64"},
+		"TOTAL": {"type": "int64"},
+		"PAGESIZE": {"type": "int64"}
+	},
+	"columns": ["INDEX", "TOTAL", "PAGESIZE"], 
+	"data": [
+		[0, 0, 100]
+	]
+}}

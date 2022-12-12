@@ -1,0 +1,27 @@
+{
+"history": {
+	"metadata": {
+		"BOARDID": {"type": "string", "bytes": 12, "max_size": 0},
+		"SECID": {"type": "string", "bytes": 150, "max_size": 0},
+		"TRADEDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"BID": {"type": "double"},
+		"OFFER": {"type": "double"},
+		"NUMBID": {"type": "int32"},
+		"NUMOFFER": {"type": "int32"}
+	},
+	"columns": ["BOARDID", "SECID", "TRADEDATE", "BID", "OFFER", "NUMBID", "NUMOFFER"], 
+	"data": [
+
+	]
+},
+"history.cursor": {
+	"metadata": {
+		"INDEX": {"type": "int64"},
+		"TOTAL": {"type": "int64"},
+		"PAGESIZE": {"type": "int64"}
+	},
+	"columns": ["INDEX", "TOTAL", "PAGESIZE"], 
+	"data": [
+		[0, 0, 100]
+	]
+}}

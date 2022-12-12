@@ -1,0 +1,96 @@
+.nav {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 65%;
+	padding-top: 5px;
+  padding-bottom: 5px;
+}
+.nav div { display: inline-block;}
+.logo, .help { width: 12%; text-align: center;}
+.help { position: absolute; right: 0px;}
+.search {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 70%;
+	background-color: red;
+}
+.searchimgdiv { position: absolute;}
+.searchimg { position: relative;}
+.search input { width: 90%;}
+.search_params { position: relative; top: 50%; transform: translate(0,-50%);}
+.search_params_div { position: relative; width: 28%; top: -10px; left: 100px;}
+.search_params_div select, button { width: 30%; padding: 2px; padding-left: 10px;}
+.search_params_div button { position: absolute; right: 10px; padding-left: 0px;}
+.tools {
+  position: relative;
+  width: 28%;
+  top: 15px;
+  left: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 1;
+  height: 540px;
+  top: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tools li {
+  position: relative;
+  left: -20px;
+  width: 100%;
+  list-style: none;
+  margin-top: 10px;
+}
+.tools li span {
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  width: 19%;
+  left: 10px;
+  margin-right: 20px;
+  top: -1px;
+}
+.footer_content { position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.footer_table { position: relative; border-collapse: separate; border-spacing: 30px 10px;}
+.footer_sheet { margin-top: 10px; margin-left: 30px; font-weight: 600;}
+.footer_table tr { text-align: left;}
+.footer_table td { font-weight: 500;}
+hr { margin-left: 30px; height: 1px; width: 346.5px;}
+.chart {
+  position: absolute;
+  right: 100px;
+  top: 150px;
+  width: 55%;
+  height: 53%;
+}
+.myChartdiv {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+#MyChart { font-family: 'Montserrat', sans-serif;}
+.advice {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+#trapezoid {
+  position: absolute;
+  top: -890px;
+  border-bottom: 3075px solid #ffffff;
+  border-left: 190px solid transparent;
+  border-right: 290px solid transparent;
+  height: 0;
+  width: 160px;
+  transform: rotate(90deg);
+}

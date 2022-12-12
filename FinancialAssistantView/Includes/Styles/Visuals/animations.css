@@ -1,0 +1,36 @@
+/* Здесь описаны анимации */
+
+@keyframes hideAnim {
+  from { opacity: 1; }
+  to { opacity: 0;}
+}
+
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hideAdvice {
+  display: inherit;
+  animation: 2s hideAnim ease;
+  color: transparent;
+}
+
+.chartStart {
+  display: inherit;
+  animation: 2s show ease;
+}
+
+.search_params_div select, button:hover {
+  cursor: pointer;
+}
+
+.search_params_div button:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.tools li:hover {
+  cursor: pointer;
+  scale: 1.05;
+}

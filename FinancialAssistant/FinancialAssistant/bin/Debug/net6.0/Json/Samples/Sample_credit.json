@@ -1,0 +1,22 @@
+{
+"history": {
+	"metadata": {
+		"boardid": {"type": "string", "bytes": 12, "max_size": 0},
+		"secid": {"type": "string", "bytes": 36, "max_size": 0}
+	},
+	"columns": ["boardid", "secid"], 
+	"data": [
+
+	]
+},
+"history.cursor": {
+	"metadata": {
+		"INDEX": {"type": "int64"},
+		"TOTAL": {"type": "int64"},
+		"PAGESIZE": {"type": "int64"}
+	},
+	"columns": ["INDEX", "TOTAL", "PAGESIZE"], 
+	"data": [
+		[0, 0, 100]
+	]
+}}

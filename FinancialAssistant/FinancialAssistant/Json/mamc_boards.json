@@ -1,0 +1,15 @@
+{
+"boards": {
+	"metadata": {
+		"id": {"type": "int32"},
+		"board_group_id": {"type": "int32"},
+		"boardid": {"type": "string", "bytes": 12, "max_size": 0},
+		"title": {"type": "string", "bytes": 381, "max_size": 0},
+		"is_traded": {"type": "int32"}
+	},
+	"columns": ["id", "board_group_id", "boardid", "title", "is_traded"], 
+	"data": [
+		[1083, 1082, "CIQB", "Урегулирование с ЦК Нерезиденты - безадрес.", 1],
+		[279, 120, "LIQB", "Продажа обеспечения бирж.рынок - безадрес.", 1]
+	]
+}}

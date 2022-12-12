@@ -1,0 +1,19 @@
+{
+"boards": {
+	"metadata": {
+		"id": {"type": "int32"},
+		"board_group_id": {"type": "int32"},
+		"boardid": {"type": "string", "bytes": 12, "max_size": 0},
+		"title": {"type": "string", "bytes": 381, "max_size": 0},
+		"is_traded": {"type": "int32"}
+	},
+	"columns": ["id", "board_group_id", "boardid", "title", "is_traded"], 
+	"data": [
+		[1029, 1028, "AGRO", "Индексы НТБ", 1],
+		[265, 104, "INAV", "INAV", 1],
+		[312, 155, "MMIX", "Money Market IndeX", 1],
+		[102, 9, "RTSI", "Индексы РТС", 1],
+		[500, 287, "SDII", "Индексы СПФИ", 1],
+		[44, 9, "SNDX", "Индексы фондового рынка", 1]
+	]
+}}

@@ -1,0 +1,46 @@
+{
+"history": {
+	"metadata": {
+		"BOARDID": {"type": "string", "bytes": 12, "max_size": 0},
+		"TRADEDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"SHORTNAME": {"type": "string", "bytes": 189, "max_size": 0},
+		"SECID": {"type": "string", "bytes": 36, "max_size": 0},
+		"NUMTRADES": {"type": "double"},
+		"VALUE": {"type": "double"},
+		"OPEN": {"type": "double"},
+		"LOW": {"type": "double"},
+		"HIGH": {"type": "double"},
+		"CLOSE": {"type": "double"},
+		"WAPRICE": {"type": "double"},
+		"VOLUME": {"type": "double"},
+		"IRICPICLOSE": {"type": "double"},
+		"BEICLOSE": {"type": "double"},
+		"COUPONPERCENT": {"type": "double"},
+		"COUPONVALUE": {"type": "double"},
+		"BUYBACKDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"LASTTRADEDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"FACEVALUE": {"type": "double"},
+		"CURRENCYID": {"type": "string", "bytes": 9, "max_size": 0},
+		"CBRCLOSE": {"type": "double"},
+		"YIELDTOOFFER": {"type": "double"},
+		"YIELDLASTCOUPON": {"type": "double"},
+		"OFFERDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"FACEUNIT": {"type": "string", "bytes": 9, "max_size": 0},
+		"TRADINGSESSION": {"type": "int32"}
+	},
+	"columns": ["BOARDID", "TRADEDATE", "SHORTNAME", "SECID", "NUMTRADES", "VALUE", "OPEN", "LOW", "HIGH", "CLOSE", "WAPRICE", "VOLUME", "IRICPICLOSE", "BEICLOSE", "COUPONPERCENT", "COUPONVALUE", "BUYBACKDATE", "LASTTRADEDATE", "FACEVALUE", "CURRENCYID", "CBRCLOSE", "YIELDTOOFFER", "YIELDLASTCOUPON", "OFFERDATE", "FACEUNIT", "TRADINGSESSION"], 
+	"data": [
+
+	]
+},
+"history.cursor": {
+	"metadata": {
+		"INDEX": {"type": "int64"},
+		"TOTAL": {"type": "int64"},
+		"PAGESIZE": {"type": "int64"}
+	},
+	"columns": ["INDEX", "TOTAL", "PAGESIZE"], 
+	"data": [
+		[0, 0, 100]
+	]
+}}

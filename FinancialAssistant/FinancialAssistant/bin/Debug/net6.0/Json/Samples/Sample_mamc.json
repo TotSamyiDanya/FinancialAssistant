@@ -1,0 +1,73 @@
+{
+"history": {
+	"metadata": {
+		"SHORTNAME": {"type": "string", "bytes": 189, "max_size": 0},
+		"REGNUMBER": {"type": "string", "bytes": 189, "max_size": 0},
+		"BOARDNAME": {"type": "string", "bytes": 381, "max_size": 0},
+		"DECIMALS": {"type": "int32"},
+		"DAILYCAPITALIZATION": {"type": "double"},
+		"MONTHLYCAPITALIZATION": {"type": "double"},
+		"ISSUESIZE": {"type": "double"},
+		"ADMITTEDVALUE": {"type": "double"},
+		"MPVALTRD": {"type": "double"},
+		"MP2VALTRD": {"type": "double"},
+		"ADMITTEDQUOTE": {"type": "double"},
+		"MARKETPRICE2": {"type": "double"},
+		"MARKETPRICE": {"type": "double"},
+		"OFFER": {"type": "double"},
+		"BID": {"type": "double"},
+		"HIGHBID": {"type": "double"},
+		"LOWOFFER": {"type": "double"},
+		"OPENVAL": {"type": "double"},
+		"CLOSEVAL": {"type": "double"},
+		"TRENDWAPPR": {"type": "double"},
+		"TRENDWAP": {"type": "double"},
+		"TRENDCLSPR": {"type": "double"},
+		"TRENDCLOSE": {"type": "double"},
+		"WAPRICE": {"type": "double"},
+		"CLOSEPERIOD": {"type": "double"},
+		"CLOSE": {"type": "double"},
+		"LEGALOPENPRICE": {"type": "double"},
+		"LOW": {"type": "double"},
+		"HIGH": {"type": "double"},
+		"LEGALCLOSEPRICE": {"type": "double"},
+		"OPEN": {"type": "double"},
+		"PREVLEGALCLOSEPRICE": {"type": "double"},
+		"OPENPERIOD": {"type": "double"},
+		"NUMTRADES": {"type": "double"},
+		"PREV": {"type": "double"},
+		"CURRENCYID": {"type": "string", "bytes": 9, "max_size": 0},
+		"VOLUME": {"type": "double"},
+		"VALUE": {"type": "double"},
+		"FACEVALUE": {"type": "double"},
+		"SECID": {"type": "string", "bytes": 36, "max_size": 0},
+		"BOARDID": {"type": "string", "bytes": 12, "max_size": 0},
+		"TRADEDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"MARKETPRICE3": {"type": "double"},
+		"MARKETPRICE3TRADESVALUE": {"type": "double"},
+		"ISIN": {"type": "string", "bytes": 765, "max_size": 0},
+		"LISTNAME": {"type": "string", "bytes": 6, "max_size": 0},
+		"TYPE": {"type": "string", "bytes": 93, "max_size": 0},
+		"CLOSEAUCTIONPRICE": {"type": "double"},
+		"WAVAL": {"type": "double"},
+		"LASTPRICE": {"type": "double"},
+		"MARKETPRICE3TRADESVALUECUR": {"type": "double"},
+		"MARKETPRICE3CUR": {"type": "double"},
+		"TRADINGSESSION": {"type": "int32"}
+	},
+	"columns": ["SHORTNAME", "REGNUMBER", "BOARDNAME", "DECIMALS", "DAILYCAPITALIZATION", "MONTHLYCAPITALIZATION", "ISSUESIZE", "ADMITTEDVALUE", "MPVALTRD", "MP2VALTRD", "ADMITTEDQUOTE", "MARKETPRICE2", "MARKETPRICE", "OFFER", "BID", "HIGHBID", "LOWOFFER", "OPENVAL", "CLOSEVAL", "TRENDWAPPR", "TRENDWAP", "TRENDCLSPR", "TRENDCLOSE", "WAPRICE", "CLOSEPERIOD", "CLOSE", "LEGALOPENPRICE", "LOW", "HIGH", "LEGALCLOSEPRICE", "OPEN", "PREVLEGALCLOSEPRICE", "OPENPERIOD", "NUMTRADES", "PREV", "CURRENCYID", "VOLUME", "VALUE", "FACEVALUE", "SECID", "BOARDID", "TRADEDATE", "MARKETPRICE3", "MARKETPRICE3TRADESVALUE", "ISIN", "LISTNAME", "TYPE", "CLOSEAUCTIONPRICE", "WAVAL", "LASTPRICE", "MARKETPRICE3TRADESVALUECUR", "MARKETPRICE3CUR", "TRADINGSESSION"], 
+	"data": [
+
+	]
+},
+"history.cursor": {
+	"metadata": {
+		"INDEX": {"type": "int64"},
+		"TOTAL": {"type": "int64"},
+		"PAGESIZE": {"type": "int64"}
+	},
+	"columns": ["INDEX", "TOTAL", "PAGESIZE"], 
+	"data": [
+		[0, 0, 100]
+	]
+}}
