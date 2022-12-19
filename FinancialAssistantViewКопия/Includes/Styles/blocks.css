@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+  	flex-direction: column;
+}
+
+.header, .main, .footer {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.header {
+	background-color: #ED878A;
+	height: 15%;
+}
+
+.footer {
+	background-color: #ED878A;
+	height: 14%;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.header div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 65%;
+	height: 38%;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header * {
+	background-color: #A995D1;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.header input {
+	width: 100%;
+	height: 150%;
+	left: -26%;
+}
+
+.header h2 {
+	width: 10%;
+}
+
+.logo, .help {
+	text-align: center;
+	background-color: #EFE288;
+}
+
+.search_form {
+	position: relative;
+	background-color: #A995D1;
+	width: 30%;
+	height: 10%;
+	left: 5%;
+}
+
+.search_form form {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #A995D1;
+	height: 100%;
+	width: 95%;
+}
+
+.search_form form select {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	height: 49%;
+	width: 30%;
+	background-color: #EFE288;
+}
+
+.search_form form button {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	height: 50%;
+	width: 30%;
+	background-color: #EFE288;
+}
+
+.tools_div {
+	background-color: #A995D1;
+	height: 70%;
+	width: 30%;
+	position: relative;
+	left: 5%;
+	margin-top: 2%;
+}
+
+.tools {
+	height: 95%;
+	width: 90%;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #A995D1;
+	padding: 0;
+	overflow-y: scroll;
+  	overflow-x: hidden;
+}
+
+.tools li {
+	list-style: none;
+	background-color: #EFE288;
+	position: relative;
+	height: 10%;
+	padding-left: 0px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.tools li span {
+	position: relative;
+	width: 10%;
+	background-color: #E7ECFF;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.moex {
+	background-color: purple;
+	position: absolute;
+	height: 64.8%;
+	width: 36.4%;
+	right: 15%;
+	top: 15%;
+}
+
+.moex img {
+	width: 100%;
+	height: 100%;
+}
+
+.chart {
+	position: absolute;
+	width: 50%;
+	height: 40%;
+	right: 5%;
+	top: 23%;
+	background-color: #EFE288;
+}

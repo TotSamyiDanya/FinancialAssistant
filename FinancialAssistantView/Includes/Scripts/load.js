@@ -74,7 +74,7 @@ async function getTools(){
 	let responce = await fetch(url);
 	let content =  await responce.text();
 	let jsoncontent = JSON.parse(content);
-
+	
 	var element = document.querySelector('.toolsul');
 
 	while (element.firstChild){
@@ -85,9 +85,9 @@ async function getTools(){
         var li = document.createElement('li');
 		var span = document.createElement('span');
 		span.className = 'toolboard';
-		li.innerHTML = `<span class="toolboard">${(jsoncontent[i]['Board']['BoardName']).substring(0,4)}</span>${jsoncontent[i]['ToolName']}`;
+		li.innerHTML = `<span class="toolboard">${(jsoncontent[i]['BoardName']).substring(0,4)}</span>${jsoncontent[i]['ToolName']}`;
 		if (i % 2 != 0){
-			li.innerHTML = `<span class="toolboard" style="background-color: #2B5DE0">${(jsoncontent[i]['Board']['BoardName']).substring(0,4)}</span>${jsoncontent[i]['ToolName']}`;
+			li.innerHTML = `<span class="toolboard" style="background-color: #2B5DE0">${(jsoncontent[i]['BoardName']).substring(0,4)}</span>${jsoncontent[i]['ToolName']}`;
 		}
 		li.className = 'tool';
 		li.id = 'tool';

@@ -87,10 +87,11 @@ hr { margin-left: 30px; height: 1px; width: 346.5px;}
 #trapezoid {
   position: absolute;
   top: -890px;
-  border-bottom: 3075px solid #ffffff;
-  border-left: 190px solid transparent;
-  border-right: 290px solid transparent;
+  border-bottom: 3775px solid #ffffff;
+  border-left: 490px solid transparent;
+  border-right: 490px solid transparent;
   height: 0;
+  left: 100px;
   width: 160px;
   transform: rotate(90deg);
 }

@@ -22,31 +22,29 @@ function CreateChartShare(toolJson){
     prices[i] = tradeDates[i]["Price"];
     dates[i] = tradeDates[i]["Date"];
   }
-  let means = meanSmooth(prices.reverse());
+  let means = meanSmooth(prices.reverse().slice(prices.length-60,prices.length));
   let result = '';
-  console.log(prices[0]);
-  console.log(means[prices.length - 1]);
-  console.log(means.length);
-  if (prices[prices.length - 1] < means[means.length - 1]){
+  console.log(means);
+  if (prices[prices.length - 1] < means[means.length - 1] && prices[prices.length - 2] - prices[prices.length - 1] < 0){
     result =  'Купить';
   }
   else {
     result = 'Продать'
   }
   let data = {
-    labels: dates.reverse(),
+    labels: dates.reverse().slice(dates.length-30, dates.length),
     datasets: [{
       label: 'Стоимость инструмента',
       backgroundColor: 'rgb(249,113,116)',
       borderColor: 'rgb(249,113,116)',
-      data: prices,
+      data: prices.slice(prices.length-30,prices.length),
     },
     {
       label: 'Средняя скользящая',
       backgroundColor: 'rgb(92,114,240)',
       borderColor: 'rgb(92,114,240)',
       borderDash: [5,5],
-      data: means,
+      data: means.slice(means.length-30,means.length),
     }]
   };
   let options = {
@@ -54,7 +52,7 @@ function CreateChartShare(toolJson){
     plugins: {
       title: {
       display: true,
-      text: `    ${toolJson["Board"]["BoardName"].substring(0,4)} ` + toolJson["ToolName"],
+      text: `    ${toolJson["BoardName"].substring(0,4)} ` + toolJson["ToolName"],
       font: {
         size: 31
       },
@@ -88,16 +86,22 @@ function CreateChartShare(toolJson){
 }
 function meanSmooth(prices){
   let result = [];
-  result.push(prices[0])
-  for (let i = 0; i < prices.length - 1; i++){
-    let res = (prices[i+1] + prices[i]) / 2;
+  for (let i = 30; i < prices.length; i++){
+    let res = lastThirtySum(i,prices) / 30;
     result.push(res);
+  }
+  return result;
+}
+function lastThirtySum(p, array){
+  let result = 0;
+  for (let i = p - 30; i < p + 1; i++){
+    result = result + array[i];
   }
   return result;
 }
 function checkResult(prices, means, length) {
   alert(prices[length]);
-  if (prices[length] < means[length]){
+  if (prices[length] < means[length] && prices[length - 1] - prices[length] < 0){
     return 'Купить';
   }
   else {
@@ -109,8 +113,7 @@ async function getTool(toolName, toolBoard){
   let responce = await fetch(url);
   let content =  await responce.text();
   let jsoncontent = JSON.parse(content);
-  let market = jsoncontent["Market"]["MarketName"];
-
+  let market = jsoncontent["MarketName"];
   let chart = document.querySelector('.chart');
   chart.classList.add('chartStart');
   switch(market){
