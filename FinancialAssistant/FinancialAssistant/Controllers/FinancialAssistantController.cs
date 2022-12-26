@@ -69,7 +69,7 @@ namespace FinancialAssistant.Controllers
         {
             using FinancialAssistantContext db = new();
             var result = db.Tools.Where(t => t.Board.BoardName.Substring(0, 4).Equals(board) &&
-                t.ToolName.Equals(toolName)).Select(t => new {t.ToolName, t.Market.MarketName, t.Board.BoardName, t.TradeDates}).FirstOrDefault();
+                t.ToolName.Equals(toolName)).Select(t => new {t.ToolName, t.Market.MarketName, t.Board.BoardName, TradeDates = t.TradeDates.Take(60)}).FirstOrDefault();
 
             string? obj = Extensions.IsNull(result) ? null : JsonConvert.SerializeObject(result);
             if (!string.IsNullOrEmpty(obj))

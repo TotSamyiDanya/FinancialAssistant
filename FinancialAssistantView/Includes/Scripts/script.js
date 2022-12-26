@@ -22,7 +22,7 @@ function CreateChartShare(toolJson){
     prices[i] = tradeDates[i]["Price"];
     dates[i] = tradeDates[i]["Date"];
   }
-  let means = meanSmooth(prices.reverse().slice(prices.length-60,prices.length));
+  let means = meanSmooth(prices.reverse());
   let result = '';
   console.log(means);
   if (prices[prices.length - 1] < means[means.length - 1] && prices[prices.length - 2] - prices[prices.length - 1] < 0){
